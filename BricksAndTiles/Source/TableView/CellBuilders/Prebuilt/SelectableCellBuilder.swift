@@ -6,7 +6,12 @@
 //  Copyright © 2020 mugbug. All rights reserved.
 //
 
+#if canImport(ViewCodeHelper)
 import ViewCodeHelper
+#endif
+#if canImport(PaintAndBrush)
+import PaintAndBrush
+#endif
 import UIKit
 
 public typealias ConfigurableTableCell = UITableViewCell & CellConfigurable
