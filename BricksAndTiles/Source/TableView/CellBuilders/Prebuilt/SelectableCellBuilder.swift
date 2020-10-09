@@ -6,11 +6,10 @@
 //  Copyright © 2020 mugbug. All rights reserved.
 //
 
-#if canImport(ViewCodeHelper)
-import ViewCodeHelper
-#endif
 #if canImport(PaintAndBrush)
 import PaintAndBrush
+#else
+import ViewCodeHelper
 #endif
 import UIKit
 

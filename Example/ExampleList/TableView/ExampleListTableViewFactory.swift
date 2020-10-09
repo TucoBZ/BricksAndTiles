@@ -8,6 +8,9 @@
 
 import UIKit
 import BricksAndTiles
+#if canImport(PaintAndBrush)
+import PaintAndBrush
+#endif
 
 struct ExampleListTableViewFactory {
     typealias ExampleViewModel = ExampleType

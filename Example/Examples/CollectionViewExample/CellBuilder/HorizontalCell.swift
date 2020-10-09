@@ -7,7 +7,11 @@
 //
 
 import UIKit
+#if canImport(PaintAndBrush)
+import PaintAndBrush
+#else
 import ViewCodeHelper
+#endif
 
 final class HorizontalCell: UICollectionViewCell, CellConfigurable {
     typealias ViewModel = String

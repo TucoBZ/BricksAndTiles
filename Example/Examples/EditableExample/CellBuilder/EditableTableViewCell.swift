@@ -8,7 +8,11 @@
 
 import UIKit
 import BricksAndTiles
+#if canImport(PaintAndBrush)
+import PaintAndBrush
+#else
 import ViewCodeHelper
+#endif
 
 class EditableTableViewCell: LabelCell, CellConfigurable {
     typealias ViewModel = Song

@@ -8,9 +8,13 @@
 
 import UIKit
 import BricksAndTiles
+#if canImport(PaintAndBrush)
+import PaintAndBrush
+#else
 import ViewCodeHelper
+#endif
 
-class ExampleNameTableViewCell<ViewModel: RawRepresentable>: LabelCell, CellConfigurable
+class ExampleNameTableViewCell<ViewModel: RawRepresentable>: LabelCell, Reusable, ViewConfigurable
     where ViewModel.RawValue == String {
     typealias ViewModel = ViewModel
 

@@ -8,8 +8,11 @@
 
 import UIKit
 import BricksAndTiles
+#if canImport(PaintAndBrush)
+import PaintAndBrush
+#else
 import ViewCodeHelper
-
+#endif
 struct HorizontalListCellBuilder: TableViewCellBuilder {
     func registerCellIdentifier(in tableView: UITableView) {
         tableView.register(HorizontalListCell.self)
